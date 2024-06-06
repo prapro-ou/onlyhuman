@@ -8,3 +8,5 @@ git clone git@github.com:prapro-ou/onlyhuman.git
 git clone https://github.com/prapro-ou/onlyhuman.git
 ```
 open onlyhuman/www/index.html in your browser.
+
+Demo: https://prapro-ou.github.io/onlyhuman/
