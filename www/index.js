@@ -31,15 +31,19 @@ class Player {
 
     if (keystates[Key.Left]) {
       this.x -= delta;
+      this.pose = 3 + (Math.trunc(this.x / 8) % 3);
     }
     if (keystates[Key.Right]) {
       this.x += delta;
+      this.pose = 6 + (Math.trunc(this.x / 8) % 3);
     }
     if (keystates[Key.Up]) {
       this.y -= delta;
+      this.pose = 9 + (Math.trunc(this.y / 8) % 3);
     }
     if (keystates[Key.Down]) {
       this.y += delta;
+      this.pose = 0 + (Math.trunc(this.y / 8) % 3);
     }
     if (keystates[Key.Button1]) {
       // do nothing for now.
